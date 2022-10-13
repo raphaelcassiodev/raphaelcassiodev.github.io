@@ -1,0 +1,79 @@
+.introducao {
+  max-width: 1200px;
+  padding: 40px 20px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  align-items: center;
+  gap: 100px;
+}
+.introducao-descricao h1 {
+  font-size: 4.5rem;
+  line-height: 1.125; /* valor do line-height (em px) / valor do font-size (em px)*/
+  margin-bottom: 30px;
+  position: relative;
+}
+
+.introducao-descricao h1::before {
+  content: "";
+  background: url("/02.portfolio-refeito/img/detalhe.svg") no-repeat center;
+  height: 128px;
+  width: 128px;
+  top: -30px;
+  left: -40px;
+  position: absolute;
+  z-index: -1;
+}
+
+.introducao-descricao p {
+  font-size: 1.5rem;
+  color: #525252;
+}
+
+@media (max-width: 1000px) {
+  .introducao {
+    grid-template-columns: 1fr 1fr;
+  }
+  .introducao-descricao h1 {
+    font-size: 3rem;
+  }
+}
+
+@media (max-width: 800px) {
+  .introducao {
+    gap: 40px;
+  }
+  .introducao-descricao h1 {
+    font-size: 2.5rem;
+  }
+  .introducao-descricao h1::before {
+    width: 10px;
+    height: 40px;
+    left: -15px;
+    top: -0px;
+  }
+}
+
+@media (max-width: 500px) {
+  .introducao {
+    padding: 20px;
+  }
+  .introducao-descricao h1 {
+    font-size: 2rem;
+  }
+}
+
+@media (max-width: 400px) {
+  .introducao {
+    grid-template-columns: 1fr;
+  }
+  .introducao img {
+    display: none;
+  }
+  .introducao-descricao h1::before {
+    width: 40px;
+    height: 10px;
+    left: 0px;
+    top: -10px;
+  }
+}

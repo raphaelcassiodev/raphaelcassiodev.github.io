@@ -89,7 +89,7 @@
 }
 .curso h3::before {
   content: "";
-  background: url("/02.portfolio-refeito/img/cursos.svg") no-repeat center;
+  background: url("../img/cursos.svg") no-repeat center;
   width: 24px;
   height: 24px;
   left: -30px;
@@ -115,7 +115,7 @@
 }
 .idioma h3::before {
   content: "";
-  background: url("/02.portfolio-refeito/img/idiomas.svg") no-repeat center;
+  background: url("../img/idiomas.svg") no-repeat center;
   width: 24px;
   height: 24px;
   left: -30px;

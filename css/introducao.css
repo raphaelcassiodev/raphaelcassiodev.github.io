@@ -16,7 +16,7 @@
 
 .introducao-descricao h1::before {
   content: "";
-  background: url("./img/detalhe.svg") no-repeat center;
+  background: url("../img/detalhe.svg") no-repeat center;
   height: 128px;
   width: 128px;
   top: -30px;
